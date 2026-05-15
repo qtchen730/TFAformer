@@ -5,6 +5,13 @@
 
 This repository contains the training pipeline, data-loading utilities, time-frequency patch embedding module, and Transformer-based classification model used in the IFAC experiments.
 
+---
+
+## Abstract
+
+To address the challenges of modality heterogeneity and cross-device generalization in fault diagnosis, this paper proposes a Device-Agnostic Modality-Adaptive Perception Embedding (MAPE) and a Universal Time-Frequency Aggregation Transformer (TFAformer) for unknown-domain fault diagnosis. MAPE adaptively extracts unified time, frequency, and time-frequency features from multi-modal signals, regardless of modality type or quantity. TFAformer aggregates global and local representations via cross-attention and self-attention, capturing both private and shared characteristics. Extensive experiments on 10 models show MAPE outperforms existing embeddings by 7.23%, and the combined framework achieves average 90.20% accuracy on industrial robot, wind turbine, and bearing datasets, demonstrating strong generalization across devices and domains.
+
+![Overall framework](./Overall_framework.png)
 
 ---
 
