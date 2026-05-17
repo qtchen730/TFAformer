@@ -56,7 +56,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     DEVICE = torch.device('cuda:{}'.format(0)) if torch.cuda.is_available() else torch.device('cpu')
-    model = Multimodal_model_single_domain_tf(class_num=args.num_class, args=args).to(DEVICE)
+    model = Multimodal_model_Mul_domain_tf(class_num=args.num_class, args=args).to(DEVICE)
 
     x = torch.randn(32, 3, 4096).to(DEVICE)  # (batch_size, seq_len, dim)
     x_t_out, x_tf_out, x_f_out = model(x)
